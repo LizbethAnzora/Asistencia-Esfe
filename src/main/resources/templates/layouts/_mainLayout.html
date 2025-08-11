@@ -15,6 +15,10 @@
 
     <!-- Fonts and icons -->
     <script th:src="@{/assets/js/plugin/webfont/webfont.min.js}"></script>
+
+        <!-- Sweet Alert -->
+    <script th:src="@{/assets/js/plugin/sweetalert/sweetalert.min.js}"></script>
+    
     <script>
       WebFont.load({
         google: { families: ["Public Sans:300,400,500,600,700"] },
@@ -38,6 +42,7 @@
     <link rel="stylesheet" th:href="@{/assets/css/plugins.min.css}" />
     <link rel="stylesheet" th:href="@{/assets/css/kaiadmin.min.css}" />
 
+ 
   </head>
   <body>
     <div class="wrapper">
@@ -92,12 +97,7 @@
                   </ul>
                 </div>
               </li>
-              <li class="nav-section">
-                <span class="sidebar-mini-icon">
-                  <i class="fa fa-ellipsis-h"></i>
-                </span>
-                <h4 class="text-section">Components</h4>
-              </li>
+             
               <li class="nav-item">
                 <a data-bs-toggle="collapse" href="#base">
                   <i class="fas fa-layer-group"></i>
@@ -121,17 +121,18 @@
                         <span class="sub-item">Docentes</span>
                       </a>
                     </li>
-                    
+                  
+                   
                   </ul>
                 </div>
               </li>
-
-              
+          
+             
             </ul>
           </div>
         </div>
       </div>
-      
+      <!-- End Sidebar -->
 
       <div class="main-panel">
         <div class="main-header">
@@ -481,7 +482,7 @@
                         <div class="user-box">
                           <div class="avatar-lg">
                             <img
-                              th:src="@{/assets/img/profile.jpg}"
+                              src="assets/img/profile.jpg"
                               alt="image profile"
                               class="avatar-img rounded"
                             />
@@ -518,12 +519,11 @@
 
         <div class="container">
           <div class="page-inner">
-
+            
             <div layout:fragment="content">
-                
-        
-            </div>  
 
+            </div>
+        
           </div>
         </div>
 
@@ -763,7 +763,7 @@
     <script th:src="@{/assets/js/plugin/chart.js/chart.min.js}"></script>
 
     <!-- jQuery Sparkline -->
-    <script th:src="@{/ssets/js/plugin/jquery.sparkline/jquery.sparkline.min.js}"></script>
+      <script th:src="@{/assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js}"></script>
 
     <!-- Chart Circle -->
     <script th:src="@{/assets/js/plugin/chart-circle/circles.min.js}"></script>
@@ -778,12 +778,12 @@
     <script th:src="@{/assets/js/plugin/jsvectormap/jsvectormap.min.js}"></script>
     <script th:src="@{/assets/js/plugin/jsvectormap/world.js}"></script>
 
-    <!-- Sweet Alert -->
-    <script th:src="@{/assets/js/plugin/sweetalert/sweetalert.min.js}"></script>
+
 
     <!-- Kaiadmin JS -->
     <script th:src="@{/assets/js/kaiadmin.min.js}"></script>
 
+ 
     <script>
       $("#lineChart").sparkline([102, 109, 120, 99, 110, 105, 115], {
         type: "line",
