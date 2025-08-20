@@ -11,8 +11,9 @@ import com.esfe.Asistencia.Repositorios.IDocenteGrupoRepository;
 import com.esfe.Asistencia.Servicios.Interfaces.IDocenteGrupoService;
 
 @Service
-public class DocenteGrupoService  implements IDocenteGrupoService {
-     @Autowired
+public class DocenteGrupoService implements IDocenteGrupoService {
+     
+    @Autowired
     private IDocenteGrupoRepository docenteGrupoRepository;
     @Override
     public List<DocenteGrupo> obtenerTodos() {
